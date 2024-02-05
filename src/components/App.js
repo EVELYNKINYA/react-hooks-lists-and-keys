@@ -1,12 +1,12 @@
 import React from "react";
 import ColorList from "./ColorList";
 
-function App() {
+const colorElements = colors.map((color) => {
   return (
-    <div>
-      <ColorList />
-    </div>
+    <li key={color} style={{ color: color }}>
+      {color}
+    </li>
   );
-}
+});
 
 export default App;
